@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="cal1.css"/>
+</head>
+<body class="light">
+  <div class="theme-toggle">
+    <button onclick="toggleTheme()">🌙 / ☀</button>
+  </div>
+
+  <div class="calculator">
+    <div class="display">
+      <div id="expression"></div>
+      <div id="result">0</div>
+    </div>
+    <div class="buttons">
+      <button onclick="append('(')">(</button>
+      <button onclick="append(')')">)</button>
+      <button onclick="useAns()">ans</button>
+      <button onclick="delChar()">DEL</button>
+      <button onclick="clearDisplay()">Clear</button>
+
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button onclick="append('%')">%</button>
+      <button onclick="sqrt()">√</button>
+
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button onclick="append('*')">×</button>
+      <button onclick="append('/')">÷</button>
+
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button onclick="append('+')">+</button>
+      <button onclick="append('-')">-</button>
+
+      <button onclick="append('.')">.</button>
+      <button onclick="append('0')">0</button>
+      <button onclick="changeSign()">±</button>
+      <button class="enter" onclick="calculate()">ENTER</button>
+    </div>
+  </div>
+
+  <script src="cal1.js"></script>
+</body>
+</html>
